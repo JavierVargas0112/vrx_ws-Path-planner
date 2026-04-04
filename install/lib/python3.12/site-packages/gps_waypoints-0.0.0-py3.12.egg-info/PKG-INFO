@@ -1,0 +1,5 @@
+Metadata-Version: 2.1
+Name: gps-waypoints
+Version: 0.0.0
+Summary: Nodo que publica checkpoints GPS desde JSON
+Author: you

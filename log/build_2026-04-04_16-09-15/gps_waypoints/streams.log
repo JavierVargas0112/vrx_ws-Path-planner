@@ -1,0 +1,10 @@
+[0.014s] Invoking command in '/home/javier/vrx_ws/build/gps_waypoints': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/javier/vrx_ws/src/gps_waypoints -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/javier/vrx_ws/install
+[0.027s] [33mCMake Warning:
+[0.028s]   Ignoring extra path from command line:
+[0.028s] 
+[0.028s]    "/home/javier/vrx_ws/src/gps_waypoints"
+[0.028s] 
+[0.028s] [0m
+[0.028s] [0mCMake Error: The source directory "/home/javier/vrx_ws/src/gps_waypoints" does not appear to contain CMakeLists.txt.
+[0.028s] Specify --help for usage, or press the help button on the CMake GUI.[0m
+[0.029s] Invoked command in '/home/javier/vrx_ws/build/gps_waypoints' returned '1': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/javier/vrx_ws/src/gps_waypoints -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/javier/vrx_ws/install

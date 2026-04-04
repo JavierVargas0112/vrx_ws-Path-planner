@@ -1,0 +1,4 @@
+[console_scripts]
+gps_waypoint_controller = gps_waypoints.controller_node:main
+gps_waypoint_converter = gps_waypoints.convert_node:main
+gps_waypoint_node = gps_waypoints.waypoint_node:main

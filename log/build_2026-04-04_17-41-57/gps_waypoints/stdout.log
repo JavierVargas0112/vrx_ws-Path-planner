@@ -1,0 +1,26 @@
+running egg_info
+writing ../../build/gps_waypoints/gps_waypoints.egg-info/PKG-INFO
+writing dependency_links to ../../build/gps_waypoints/gps_waypoints.egg-info/dependency_links.txt
+writing entry points to ../../build/gps_waypoints/gps_waypoints.egg-info/entry_points.txt
+writing requirements to ../../build/gps_waypoints/gps_waypoints.egg-info/requires.txt
+writing top-level names to ../../build/gps_waypoints/gps_waypoints.egg-info/top_level.txt
+reading manifest file '../../build/gps_waypoints/gps_waypoints.egg-info/SOURCES.txt'
+writing manifest file '../../build/gps_waypoints/gps_waypoints.egg-info/SOURCES.txt'
+running build
+running build_py
+copying gps_waypoints/controller_node.py -> /home/javier/vrx_ws/build/gps_waypoints/build/lib/gps_waypoints
+copying gps_waypoints/convert_node.py -> /home/javier/vrx_ws/build/gps_waypoints/build/lib/gps_waypoints
+running install
+running install_lib
+copying /home/javier/vrx_ws/build/gps_waypoints/build/lib/gps_waypoints/controller_node.py -> /home/javier/vrx_ws/install/lib/python3.12/site-packages/gps_waypoints
+copying /home/javier/vrx_ws/build/gps_waypoints/build/lib/gps_waypoints/convert_node.py -> /home/javier/vrx_ws/install/lib/python3.12/site-packages/gps_waypoints
+byte-compiling /home/javier/vrx_ws/install/lib/python3.12/site-packages/gps_waypoints/controller_node.py to controller_node.cpython-312.pyc
+byte-compiling /home/javier/vrx_ws/install/lib/python3.12/site-packages/gps_waypoints/convert_node.py to convert_node.cpython-312.pyc
+running install_egg_info
+removing '/home/javier/vrx_ws/install/lib/python3.12/site-packages/gps_waypoints-0.0.0-py3.12.egg-info' (and everything under it)
+Copying ../../build/gps_waypoints/gps_waypoints.egg-info to /home/javier/vrx_ws/install/lib/python3.12/site-packages/gps_waypoints-0.0.0-py3.12.egg-info
+running install_scripts
+Installing gps_waypoint_controller script to /home/javier/vrx_ws/install/bin
+Installing gps_waypoint_converter script to /home/javier/vrx_ws/install/bin
+Installing gps_waypoint_node script to /home/javier/vrx_ws/install/bin
+writing list of installed files to '/home/javier/vrx_ws/build/gps_waypoints/install.log'
