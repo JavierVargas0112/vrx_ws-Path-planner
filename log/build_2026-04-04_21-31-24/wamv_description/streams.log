@@ -1,0 +1,70 @@
+[0.044s] Invoking command in '/home/javier/vrx_ws/build/wamv_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com GZ_SIM_RESOURCE_PATH=/home/javier/vrx_ws/install/share:${GZ_SIM_RESOURCE_PATH} /usr/bin/cmake /home/javier/vrx_ws/src/vrx_urdf/wamv_description -DCMAKE_INSTALL_PREFIX=/home/javier/vrx_ws/install
+[0.168s] -- The C compiler identification is GNU 13.3.0
+[0.300s] -- The CXX compiler identification is GNU 13.3.0
+[0.338s] -- Detecting C compiler ABI info
+[0.562s] -- Detecting C compiler ABI info - done
+[0.579s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.582s] -- Detecting C compile features
+[0.582s] -- Detecting C compile features - done
+[0.599s] -- Detecting CXX compiler ABI info
+[0.849s] -- Detecting CXX compiler ABI info - done
+[0.872s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.872s] -- Detecting CXX compile features
+[0.874s] -- Detecting CXX compile features - done
+[0.882s] -- Found ament_cmake: 2.5.5 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[1.327s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.693s] -- Found xacro: 2.1.1 (/opt/ros/jazzy/share/xacro/cmake)
+[1.698s] -- xacro: determining deps for: urdf/wamv_base.urdf.xacro ...
+[2.384s] -- Configuring done (2.3s)
+[2.392s] -- Generating done (0.0s)
+[2.400s] -- Build files have been written to: /home/javier/vrx_ws/build/wamv_description
+[2.414s] Invoked command in '/home/javier/vrx_ws/build/wamv_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com GZ_SIM_RESOURCE_PATH=/home/javier/vrx_ws/install/share:${GZ_SIM_RESOURCE_PATH} /usr/bin/cmake /home/javier/vrx_ws/src/vrx_urdf/wamv_description -DCMAKE_INSTALL_PREFIX=/home/javier/vrx_ws/install
+[2.416s] Invoking command in '/home/javier/vrx_ws/build/wamv_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com GZ_SIM_RESOURCE_PATH=/home/javier/vrx_ws/install/share:${GZ_SIM_RESOURCE_PATH} /usr/bin/cmake --build /home/javier/vrx_ws/build/wamv_description -- -j8 -l8
+[2.552s] [100%] xacro: generating urdf/wamv_base.urdf from urdf/wamv_base.urdf.xacro
+[2.937s] [100%] Built target wamv_description__xacro_auto_generate
+[2.960s] Invoked command in '/home/javier/vrx_ws/build/wamv_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com GZ_SIM_RESOURCE_PATH=/home/javier/vrx_ws/install/share:${GZ_SIM_RESOURCE_PATH} /usr/bin/cmake --build /home/javier/vrx_ws/build/wamv_description -- -j8 -l8
+[2.964s] Invoking command in '/home/javier/vrx_ws/build/wamv_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com GZ_SIM_RESOURCE_PATH=/home/javier/vrx_ws/install/share:${GZ_SIM_RESOURCE_PATH} /usr/bin/cmake --install /home/javier/vrx_ws/build/wamv_description
+[2.988s] -- Install configuration: ""
+[2.989s] -- Installing: /home/javier/vrx_ws/install/share/wamv_description/environment/resource_paths.dsv
+[2.989s] -- Installing: /home/javier/vrx_ws/install/share/wamv_description/environment/resource_paths.sh
+[2.990s] -- Installing: /home/javier/vrx_ws/install/share/wamv_description/urdf/wamv_base.urdf
+[2.990s] -- Installing: /home/javier/vrx_ws/install/share/wamv_description/models
+[2.990s] -- Installing: /home/javier/vrx_ws/install/share/wamv_description/models/propeller
+[2.990s] -- Installing: /home/javier/vrx_ws/install/share/wamv_description/models/propeller/mesh
+[2.990s] -- Installing: /home/javier/vrx_ws/install/share/wamv_description/models/propeller/mesh/propeller.dae
+[2.991s] -- Installing: /home/javier/vrx_ws/install/share/wamv_description/models/propeller/model.config
+[2.991s] -- Installing: /home/javier/vrx_ws/install/share/wamv_description/models/WAM-V-Base
+[2.991s] -- Installing: /home/javier/vrx_ws/install/share/wamv_description/models/WAM-V-Base/mesh
+[2.991s] -- Installing: /home/javier/vrx_ws/install/share/wamv_description/models/WAM-V-Base/mesh/WAM-V_Albedo.png
+[3.012s] -- Installing: /home/javier/vrx_ws/install/share/wamv_description/models/WAM-V-Base/mesh/WAM-V_Metalness.png
+[3.014s] -- Installing: /home/javier/vrx_ws/install/share/wamv_description/models/WAM-V-Base/mesh/WAM-V_Normal.png
+[3.029s] -- Installing: /home/javier/vrx_ws/install/share/wamv_description/models/WAM-V-Base/mesh/WAM-V-Base.dae
+[3.035s] -- Installing: /home/javier/vrx_ws/install/share/wamv_description/models/WAM-V-Base/mesh/WAM-V_Roughness.png
+[3.045s] -- Installing: /home/javier/vrx_ws/install/share/wamv_description/models/WAM-V-Base/mesh/WamV.png
+[3.052s] -- Installing: /home/javier/vrx_ws/install/share/wamv_description/models/WAM-V-Base/model.config
+[3.053s] -- Installing: /home/javier/vrx_ws/install/share/wamv_description/models/engine
+[3.054s] -- Installing: /home/javier/vrx_ws/install/share/wamv_description/models/engine/mesh
+[3.054s] -- Installing: /home/javier/vrx_ws/install/share/wamv_description/models/engine/mesh/engine.dae
+[3.056s] -- Installing: /home/javier/vrx_ws/install/share/wamv_description/models/engine/model.config
+[3.056s] -- Up-to-date: /home/javier/vrx_ws/install/share/wamv_description/urdf
+[3.057s] -- Installing: /home/javier/vrx_ws/install/share/wamv_description/urdf/thrusters
+[3.057s] -- Installing: /home/javier/vrx_ws/install/share/wamv_description/urdf/thrusters/engine.xacro
+[3.057s] -- Installing: /home/javier/vrx_ws/install/share/wamv_description/urdf/cpu_cases.xacro
+[3.058s] -- Installing: /home/javier/vrx_ws/install/share/wamv_description/urdf/wamv_base.urdf.xacro
+[3.058s] -- Installing: /home/javier/vrx_ws/install/share/wamv_description/urdf/battery.xacro
+[3.058s] -- Installing: /home/javier/vrx_ws/install/share/ament_index/resource_index/package_run_dependencies/wamv_description
+[3.058s] -- Installing: /home/javier/vrx_ws/install/share/ament_index/resource_index/parent_prefix_path/wamv_description
+[3.059s] -- Installing: /home/javier/vrx_ws/install/share/wamv_description/environment/ament_prefix_path.sh
+[3.059s] -- Installing: /home/javier/vrx_ws/install/share/wamv_description/environment/ament_prefix_path.dsv
+[3.059s] -- Installing: /home/javier/vrx_ws/install/share/wamv_description/environment/path.sh
+[3.059s] -- Installing: /home/javier/vrx_ws/install/share/wamv_description/environment/path.dsv
+[3.060s] -- Installing: /home/javier/vrx_ws/install/share/wamv_description/local_setup.bash
+[3.060s] -- Installing: /home/javier/vrx_ws/install/share/wamv_description/local_setup.sh
+[3.060s] -- Installing: /home/javier/vrx_ws/install/share/wamv_description/local_setup.zsh
+[3.060s] -- Installing: /home/javier/vrx_ws/install/share/wamv_description/local_setup.dsv
+[3.060s] -- Installing: /home/javier/vrx_ws/install/share/wamv_description/package.dsv
+[3.061s] -- Installing: /home/javier/vrx_ws/install/share/ament_index/resource_index/packages/wamv_description
+[3.061s] -- Installing: /home/javier/vrx_ws/install/share/wamv_description/cmake/wamv_descriptionConfig.cmake
+[3.061s] -- Installing: /home/javier/vrx_ws/install/share/wamv_description/cmake/wamv_descriptionConfig-version.cmake
+[3.061s] -- Installing: /home/javier/vrx_ws/install/share/wamv_description/package.xml
+[3.063s] Invoked command in '/home/javier/vrx_ws/build/wamv_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com GZ_SIM_RESOURCE_PATH=/home/javier/vrx_ws/install/share:${GZ_SIM_RESOURCE_PATH} /usr/bin/cmake --install /home/javier/vrx_ws/build/wamv_description

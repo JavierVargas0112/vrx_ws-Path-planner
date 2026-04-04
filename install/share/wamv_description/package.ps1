@@ -111,8 +111,9 @@ function colcon_package_source_powershell_script {
 $env:COLCON_CURRENT_PREFIX=(Get-Item $PSCommandPath).Directory.Parent.Parent.FullName
 
 colcon_package_source_powershell_script "$env:COLCON_CURRENT_PREFIX\share/wamv_description/hook/cmake_prefix_path.ps1"
-colcon_package_source_powershell_script "$env:COLCON_CURRENT_PREFIX\share/wamv_description/hook/ld_library_path_lib.ps1"
+colcon_package_source_powershell_script "$env:COLCON_CURRENT_PREFIX\share/wamv_description/hook/path.ps1"
 colcon_package_source_powershell_script "$env:COLCON_CURRENT_PREFIX\share/wamv_description/hook/pythonpath.ps1"
+colcon_package_source_powershell_script "$env:COLCON_CURRENT_PREFIX\share/wamv_description/hook/pythonscriptspath.ps1"
 colcon_package_source_powershell_script "$env:COLCON_CURRENT_PREFIX\share/wamv_description/local_setup.ps1"
 
 Remove-Item Env:\COLCON_CURRENT_PREFIX

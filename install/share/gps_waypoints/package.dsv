@@ -1,9 +1,6 @@
 source;share/gps_waypoints/hook/cmake_prefix_path.ps1
 source;share/gps_waypoints/hook/cmake_prefix_path.dsv
 source;share/gps_waypoints/hook/cmake_prefix_path.sh
-source;share/gps_waypoints/hook/ld_library_path_lib.ps1
-source;share/gps_waypoints/hook/ld_library_path_lib.dsv
-source;share/gps_waypoints/hook/ld_library_path_lib.sh
 source;share/gps_waypoints/hook/path.ps1
 source;share/gps_waypoints/hook/path.dsv
 source;share/gps_waypoints/hook/path.sh

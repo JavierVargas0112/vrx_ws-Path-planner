@@ -11,6 +11,6 @@
 /home/javier/vrx_ws/install/lib/python3.12/site-packages/gps_waypoints-0.0.0-py3.12.egg-info/requires.txt
 /home/javier/vrx_ws/install/lib/python3.12/site-packages/gps_waypoints-0.0.0-py3.12.egg-info/SOURCES.txt
 /home/javier/vrx_ws/install/lib/python3.12/site-packages/gps_waypoints-0.0.0-py3.12.egg-info/entry_points.txt
-/home/javier/vrx_ws/install/bin/gps_waypoint_controller
-/home/javier/vrx_ws/install/bin/gps_waypoint_converter
-/home/javier/vrx_ws/install/bin/gps_waypoint_node
+/home/javier/vrx_ws/install/lib/gps_waypoints/gps_waypoint_controller
+/home/javier/vrx_ws/install/lib/gps_waypoints/gps_waypoint_converter
+/home/javier/vrx_ws/install/lib/gps_waypoints/gps_waypoint_node
