@@ -1,0 +1,75 @@
+[0.000000] (-) TimerEvent: {}
+[0.000318] (-) JobUnselected: {'identifier': 'vrx_gazebo'}
+[0.000635] (-) JobUnselected: {'identifier': 'vrx_gz'}
+[0.000992] (-) JobUnselected: {'identifier': 'vrx_ros'}
+[0.001518] (-) JobUnselected: {'identifier': 'wamv_description'}
+[0.001601] (-) JobUnselected: {'identifier': 'wamv_gazebo'}
+[0.002100] (gps_waypoints) JobQueued: {'identifier': 'gps_waypoints', 'dependencies': OrderedDict()}
+[0.002362] (gps_waypoints) JobStarted: {'identifier': 'gps_waypoints'}
+[0.099320] (-) TimerEvent: {}
+[0.199755] (-) TimerEvent: {}
+[0.300327] (-) TimerEvent: {}
+[0.401062] (-) TimerEvent: {}
+[0.501330] (-) TimerEvent: {}
+[0.601805] (-) TimerEvent: {}
+[0.702904] (-) TimerEvent: {}
+[0.803681] (-) TimerEvent: {}
+[0.904142] (-) TimerEvent: {}
+[1.005480] (-) TimerEvent: {}
+[1.105925] (-) TimerEvent: {}
+[1.208065] (-) TimerEvent: {}
+[1.308782] (-) TimerEvent: {}
+[1.409161] (-) TimerEvent: {}
+[1.510614] (-) TimerEvent: {}
+[1.611058] (-) TimerEvent: {}
+[1.711708] (-) TimerEvent: {}
+[1.812455] (-) TimerEvent: {}
+[1.912882] (-) TimerEvent: {}
+[2.013757] (-) TimerEvent: {}
+[2.114387] (-) TimerEvent: {}
+[2.214863] (-) TimerEvent: {}
+[2.315481] (-) TimerEvent: {}
+[2.416066] (-) TimerEvent: {}
+[2.454312] (gps_waypoints) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/gps_waypoints', 'build', '--build-base', '/home/javier/vrx_ws/build/gps_waypoints/build', 'install', '--record', '/home/javier/vrx_ws/build/gps_waypoints/install.log', '--single-version-externally-managed'], 'cwd': '/home/javier/vrx_ws/src/gps_waypoints', 'env': {'GZ_SIM_SYSTEM_PLUGIN_PATH': '/home/javier/install/vrx_gz/lib', 'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'VSCODE_CWD': '/home/javier', 'VSCODE_ESM_ENTRYPOINT': 'vs/workbench/api/node/extensionHostProcess', 'GZ_SIM_RESOURCE_PATH': '/home/javier/vrx_ws/install/share/wamv_description/models:/home/javier/vrx_ws/install/share/vrx_gazebo/models:/home/javier/vrx_ws/install/share/:/home/javier/install/vrx_gz/share/vrx_gz/models/tmp:/home/javier/install/vrx_gz/share/vrx_gz/models:/home/javier/install/vrx_gz/share/vrx_gz/worlds/2023_phase2:/home/javier/install/vrx_gz/share/vrx_gz/worlds/2023_practice:/home/javier/install/vrx_gz/share/vrx_gz/worlds:/home/javier/install/wamv_description/share/wamv_description/models:/home/javier/install/vrx_gazebo/share/vrx_gazebo/models:/home/javier/install/vrx_gazebo/share/:/opt/ros/jazzy/share', 'USER': 'javier', 'SNAP_COMMON': '/var/snap/code/common', 'VSCODE_NLS_CONFIG': '{"userLocale":"en-us","osLocale":"en-us","resolvedLanguage":"en","defaultMessagesFile":"/snap/code/230/usr/share/code/resources/app/out/nls.messages.json","locale":"en-us","availableLanguages":{}}', 'FONTCONFIG_PATH': '/etc/fonts', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'GIO_MODULE_DIR': '/home/javier/snap/code/common/.cache/gio-modules', 'VSCODE_HANDLES_UNCAUGHT_ERRORS': 'true', 'XDG_SESSION_TYPE': 'wayland', 'SNAP_UID': '1000', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/javier/install/vrx_gz/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/javier', 'CHROME_DESKTOP': 'code.desktop', 'SNAP_LIBRARY_PATH': '/var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32', 'OLDPWD': '/home/javier/vrx_ws', 'DESKTOP_SESSION': 'ubuntu', 'SNAP_USER_DATA': '/home/javier/snap/code/230', 'GTK_PATH': '/snap/code/230/usr/lib/x86_64-linux-gnu/gtk-3.0', 'VSCODE_IPC_HOOK': '/run/user/1000/vscode-fa781f4a-1.11-main.sock', 'GTK_IM_MODULE_FILE': '/home/javier/snap/code/common/.cache/immodules/immodules.cache', 'GIO_LAUNCHED_DESKTOP_FILE': '/var/lib/snapd/desktop/applications/code_code.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'MANAGERPID': '1969', 'COPILOT_CLI': '1', 'SYSTEMD_EXEC_PID': '2254', 'IM_CONFIG_CHECK_ENV': '1', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'SNAP_REVISION': '230', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '3162', 'VSCODE_CRASH_REPORTER_PROCESS_TYPE': 'extensionHost', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'VSCODE_L10N_BUNDLE_LOCATION': '', 'COLCON_PREFIX_PATH': '/home/javier/vrx_ws/install:/home/javier/install', 'APPLICATION_INSIGHTS_NO_STATSBEAT': 'true', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'javier', 'SNAP_CONTEXT': '2Fj-axQc0sJTvUxuHtfNrv9UG6uEhURUfz55PaZZSPY_0mgugXVR', 'JOURNAL_STREAM': '9:17007', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_CONFIG_DIRS_VSCODE_SNAP_ORIG': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'SNAP_VERSION': '07ff9d61', 'XDG_DATA_DIRS_VSCODE_SNAP_ORIG': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'USERNAME': 'javier', 'TERM': 'xterm-color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'SNAP_INSTANCE_NAME': 'code', 'FC_FONTATIONS': '1', 'PATH': '/home/javier/vrx_ws/install/bin:/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/javier-Nitro-AN515-54:@/tmp/.ICE-unix/2217,unix/javier-Nitro-AN515-54:/tmp/.ICE-unix/2217', 'GTK_EXE_PREFIX': '/snap/code/230/usr', 'INVOCATION_ID': '56e854b61e0b4cf980a642824f8001fc', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_SETUP_DISPLAY': ':1', 'SNAP_DATA': '/var/snap/code/230', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'x11', 'DISPLAY': ':0', 'LOCPATH': '/snap/code/230/usr/lib/locale', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XDG_DATA_HOME': '/home/javier/snap/code/230/.local/share', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.FC4NN3', 'SNAP_USER_COMMON': '/home/javier/snap/code/common', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'GSETTINGS_SCHEMA_DIR': '/home/javier/snap/code/230/.local/share/glib-2.0/schemas', 'SNAP_ARCH': 'amd64', 'AMENT_PREFIX_PATH': '/home/javier/vrx_ws/install:/home/javier/install/vrx_gz:/home/javier/install/wamv_gazebo:/home/javier/install/wamv_description:/home/javier/install/vrx_ros:/home/javier/install/vrx_gazebo:/opt/ros/jazzy', 'SNAP_COOKIE': '2Fj-axQc0sJTvUxuHtfNrv9UG6uEhURUfz55PaZZSPY_0mgugXVR', 'SHELL': '/bin/bash', 'GDK_PIXBUF_MODULEDIR': '/snap/code/230/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders', 'QT_ACCESSIBILITY': '1', 'ELECTRON_RUN_AS_NODE': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'SNAP_NAME': 'code', 'FONTCONFIG_FILE': '/etc/fonts/fonts.conf', 'GDK_PIXBUF_MODULE_FILE': '/home/javier/snap/code/common/.cache/gdk-pixbuf-loaders.cache', 'GJS_DEBUG_OUTPUT': 'stderr', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'SNAP_LAUNCHER_ARCH_TRIPLET': 'x86_64-linux-gnu', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/javier/vrx_ws/build/gps_waypoints', 'VSCODE_CLI': '1', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'SNAP_REAL_HOME': '/home/javier', 'VSCODE_CODE_CACHE_PATH': '/home/javier/.config/Code/CachedData/07ff9d6178ede9a1bd12ad3399074d726ebe6e43', 'XDG_DATA_DIRS': '/home/javier/snap/code/230/.local/share:/home/javier/snap/code/230:/snap/code/230/usr/share:/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'SNAP_EUID': '1000', 'PYTHONPATH': '/home/javier/vrx_ws/build/gps_waypoints/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/javier/vrx_ws/install/lib/python3.12/site-packages:/home/javier/vrx_ws/install/lib/python3.12/site-packages:/home/javier/install/vrx_gz/lib/python3.12/site-packages:/home/javier/install/vrx_gazebo/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'SNAP': '/snap/code/230', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'ELECTRON_NO_ATTACH_CONSOLE': '1', 'CMAKE_PREFIX_PATH': '/home/javier/vrx_ws/install:/home/javier/install/vrx_gz:/home/javier/install/wamv_gazebo:/home/javier/install/wamv_description:/home/javier/install/vrx_ros:/home/javier/install/vrx_gazebo:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor', 'VSCODE_PID': '3222'}, 'shell': False}
+[2.516225] (-) TimerEvent: {}
+[2.616824] (-) TimerEvent: {}
+[2.717471] (-) TimerEvent: {}
+[2.817927] (-) TimerEvent: {}
+[2.918484] (-) TimerEvent: {}
+[3.019717] (-) TimerEvent: {}
+[3.120037] (-) TimerEvent: {}
+[3.187509] (gps_waypoints) StdoutLine: {'line': b'running egg_info\n'}
+[3.220125] (-) TimerEvent: {}
+[3.237572] (gps_waypoints) StdoutLine: {'line': b'writing ../../build/gps_waypoints/gps_waypoints.egg-info/PKG-INFO\n'}
+[3.238648] (gps_waypoints) StdoutLine: {'line': b'writing dependency_links to ../../build/gps_waypoints/gps_waypoints.egg-info/dependency_links.txt\n'}
+[3.239517] (gps_waypoints) StdoutLine: {'line': b'writing entry points to ../../build/gps_waypoints/gps_waypoints.egg-info/entry_points.txt\n'}
+[3.240123] (gps_waypoints) StdoutLine: {'line': b'writing requirements to ../../build/gps_waypoints/gps_waypoints.egg-info/requires.txt\n'}
+[3.240511] (gps_waypoints) StdoutLine: {'line': b'writing top-level names to ../../build/gps_waypoints/gps_waypoints.egg-info/top_level.txt\n'}
+[3.320307] (-) TimerEvent: {}
+[3.357355] (gps_waypoints) StdoutLine: {'line': b"reading manifest file '../../build/gps_waypoints/gps_waypoints.egg-info/SOURCES.txt'\n"}
+[3.359326] (gps_waypoints) StdoutLine: {'line': b"writing manifest file '../../build/gps_waypoints/gps_waypoints.egg-info/SOURCES.txt'\n"}
+[3.359982] (gps_waypoints) StdoutLine: {'line': b'running build\n'}
+[3.361224] (gps_waypoints) StdoutLine: {'line': b'running build_py\n'}
+[3.362940] (gps_waypoints) StdoutLine: {'line': b'copying gps_waypoints/controller_node.py -> /home/javier/vrx_ws/build/gps_waypoints/build/lib/gps_waypoints\n'}
+[3.363336] (gps_waypoints) StdoutLine: {'line': b'running install\n'}
+[3.379038] (gps_waypoints) StdoutLine: {'line': b'running install_lib\n'}
+[3.420378] (-) TimerEvent: {}
+[3.426482] (gps_waypoints) StdoutLine: {'line': b'copying /home/javier/vrx_ws/build/gps_waypoints/build/lib/gps_waypoints/controller_node.py -> /home/javier/vrx_ws/install/lib/python3.12/site-packages/gps_waypoints\n'}
+[3.427264] (gps_waypoints) StdoutLine: {'line': b'byte-compiling /home/javier/vrx_ws/install/lib/python3.12/site-packages/gps_waypoints/controller_node.py to controller_node.cpython-312.pyc\n'}
+[3.434439] (gps_waypoints) StdoutLine: {'line': b'running install_egg_info\n'}
+[3.497284] (gps_waypoints) StdoutLine: {'line': b"removing '/home/javier/vrx_ws/install/lib/python3.12/site-packages/gps_waypoints-0.0.0-py3.12.egg-info' (and everything under it)\n"}
+[3.497997] (gps_waypoints) StdoutLine: {'line': b'Copying ../../build/gps_waypoints/gps_waypoints.egg-info to /home/javier/vrx_ws/install/lib/python3.12/site-packages/gps_waypoints-0.0.0-py3.12.egg-info\n'}
+[3.501713] (gps_waypoints) StdoutLine: {'line': b'running install_scripts\n'}
+[3.520473] (-) TimerEvent: {}
+[3.620722] (-) TimerEvent: {}
+[3.721085] (-) TimerEvent: {}
+[3.821936] (-) TimerEvent: {}
+[3.877718] (gps_waypoints) StdoutLine: {'line': b'Installing gps_waypoint_controller script to /home/javier/vrx_ws/install/lib/gps_waypoints\n'}
+[3.879483] (gps_waypoints) StdoutLine: {'line': b'Installing gps_waypoint_converter script to /home/javier/vrx_ws/install/lib/gps_waypoints\n'}
+[3.879767] (gps_waypoints) StdoutLine: {'line': b'Installing gps_waypoint_node script to /home/javier/vrx_ws/install/lib/gps_waypoints\n'}
+[3.879981] (gps_waypoints) StdoutLine: {'line': b"writing list of installed files to '/home/javier/vrx_ws/build/gps_waypoints/install.log'\n"}
+[3.925823] (-) TimerEvent: {}
+[4.005818] (gps_waypoints) CommandEnded: {'returncode': 0}
+[4.025933] (-) TimerEvent: {}
+[4.042657] (gps_waypoints) JobEnded: {'identifier': 'gps_waypoints', 'rc': 0}
+[4.045575] (-) EventReactorShutdown: {}

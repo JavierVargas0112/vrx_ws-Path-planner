@@ -28,13 +28,16 @@ class GoalToCmd(Node):
         self.declare_parameter('right_thrust_topic', '/wamv/thrusters/right/thrust')
         self.declare_parameter('left_pos_topic', '/wamv/thrusters/left/pos')
         self.declare_parameter('right_pos_topic', '/wamv/thrusters/right/pos')
+        self.declare_parameter('base_link_frame', 'wamv/wamv/base_link')
         self.declare_parameter('max_thrust', 400.0)
         self.declare_parameter('k_thrust_lin', 120.0)
         self.declare_parameter('k_thrust_ang', 80.0)
         self.declare_parameter('max_azimuth', 0.8)
         self.declare_parameter('heading_slowdown_rad', 0.6)
         self.declare_parameter('heading_inplace_rad', 1.0)
-        self.declare_parameter('min_forward_thrust', 40.0)
+        self.declare_parameter('heading_deadband_rad', 0.08)
+        self.declare_parameter('min_forward_thrust', 0.0)
+        self.declare_parameter('turn_close_dist', 8.0)
         self.declare_parameter('k_lin', 0.8)
         self.declare_parameter('k_ang', 1.2)
         self.declare_parameter('max_lin', 1.0)
@@ -49,13 +52,16 @@ class GoalToCmd(Node):
         self.right_thrust_topic = self.get_parameter('right_thrust_topic').get_parameter_value().string_value
         self.left_pos_topic = self.get_parameter('left_pos_topic').get_parameter_value().string_value
         self.right_pos_topic = self.get_parameter('right_pos_topic').get_parameter_value().string_value
+        self.base_link_frame = self.get_parameter('base_link_frame').get_parameter_value().string_value
         self.max_thrust = float(self.get_parameter('max_thrust').get_parameter_value().double_value)
         self.k_thrust_lin = float(self.get_parameter('k_thrust_lin').get_parameter_value().double_value)
         self.k_thrust_ang = float(self.get_parameter('k_thrust_ang').get_parameter_value().double_value)
         self.max_azimuth = float(self.get_parameter('max_azimuth').get_parameter_value().double_value)
         self.heading_slowdown_rad = float(self.get_parameter('heading_slowdown_rad').get_parameter_value().double_value)
         self.heading_inplace_rad = float(self.get_parameter('heading_inplace_rad').get_parameter_value().double_value)
+        self.heading_deadband_rad = float(self.get_parameter('heading_deadband_rad').get_parameter_value().double_value)
         self.min_forward_thrust = float(self.get_parameter('min_forward_thrust').get_parameter_value().double_value)
+        self.turn_close_dist = float(self.get_parameter('turn_close_dist').get_parameter_value().double_value)
         self.k_lin = float(self.get_parameter('k_lin').get_parameter_value().double_value)
         self.k_ang = float(self.get_parameter('k_ang').get_parameter_value().double_value)
         self.max_lin = float(self.get_parameter('max_lin').get_parameter_value().double_value)
@@ -96,7 +102,22 @@ class GoalToCmd(Node):
             self.have_pose = False
             return
 
-        t = msg.transforms[0].transform
+        chosen = None
+        for tf in msg.transforms:
+            if tf.child_frame_id == self.base_link_frame and tf.header.frame_id != self.base_link_frame:
+                chosen = tf
+                break
+        if chosen is None:
+            for tf in msg.transforms:
+                if tf.child_frame_id.endswith('/base_link') and not tf.header.frame_id.endswith('/base_link'):
+                    chosen = tf
+                    break
+        if chosen is None:
+            # Some VRX bridge setups publish only sensor-relative transforms.
+            # Fallback to the first transform so control can continue.
+            chosen = msg.transforms[0]
+
+        t = chosen.transform
         self.current_x = t.translation.x
         self.current_y = t.translation.y
         q = t.rotation
@@ -139,8 +160,14 @@ class GoalToCmd(Node):
                     forward = 0.0
                 else:
                     heading_scale = max(0.0, 1.0 - (abs_ang / max(self.heading_slowdown_rad, 1e-6)))
-                    forward = min(self.max_thrust, max(self.min_forward_thrust, self.k_thrust_lin * dist)) * heading_scale
-                turn = max(-self.max_thrust, min(self.max_thrust, self.k_thrust_ang * ang_err))
+                    forward_raw = min(self.max_thrust, self.k_thrust_lin * dist)
+                    if forward_raw > 0.0:
+                        forward_raw = max(self.min_forward_thrust, forward_raw)
+                    forward = forward_raw * heading_scale
+                ang_for_turn = 0.0 if abs_ang < self.heading_deadband_rad else ang_err
+                turn = max(-self.max_thrust, min(self.max_thrust, self.k_thrust_ang * ang_for_turn))
+                if dist < self.turn_close_dist:
+                    turn *= max(0.2, dist / max(self.turn_close_dist, 1e-6))
                 left = max(-self.max_thrust, min(self.max_thrust, forward - turn))
                 right = max(-self.max_thrust, min(self.max_thrust, forward + turn))
                 azimuth = 0.0
