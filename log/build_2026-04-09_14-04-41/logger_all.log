@@ -1,0 +1,239 @@
+[0.705s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--packages-select', 'gps_waypoints', '--merge-install']
+[0.706s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=True, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=8, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=['gps_waypoints'], packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7a8f8e57cf20>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7a8f8e6c0f80>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7a8f8e6c0f80>>, mixin_verb=('build',))
+[0.978s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.979s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.979s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.979s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.979s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.979s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.980s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/javier/vrx_ws'
+[0.981s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.981s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.982s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.982s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.982s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.982s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.982s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.983s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.983s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[1.119s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[1.119s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[1.120s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[1.120s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[1.120s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[1.121s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[1.121s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[1.121s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[1.122s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[1.122s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[1.123s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[1.123s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[1.124s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[1.124s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[1.124s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[1.125s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[1.126s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[1.126s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[1.127s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[1.127s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[1.127s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[1.127s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[1.127s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[1.129s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[1.129s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[1.129s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[1.129s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[1.129s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[1.130s] Level 1:colcon.colcon_core.package_identification:_identify(src/docker) by extensions ['ignore', 'ignore_ament_install']
+[1.131s] Level 1:colcon.colcon_core.package_identification:_identify(src/docker) by extension 'ignore'
+[1.132s] Level 1:colcon.colcon_core.package_identification:_identify(src/docker) by extension 'ignore_ament_install'
+[1.132s] Level 1:colcon.colcon_core.package_identification:_identify(src/docker) by extensions ['colcon_pkg']
+[1.132s] Level 1:colcon.colcon_core.package_identification:_identify(src/docker) by extension 'colcon_pkg'
+[1.133s] Level 1:colcon.colcon_core.package_identification:_identify(src/docker) by extensions ['colcon_meta']
+[1.134s] Level 1:colcon.colcon_core.package_identification:_identify(src/docker) by extension 'colcon_meta'
+[1.134s] Level 1:colcon.colcon_core.package_identification:_identify(src/docker) by extensions ['ros']
+[1.134s] Level 1:colcon.colcon_core.package_identification:_identify(src/docker) by extension 'ros'
+[1.134s] Level 1:colcon.colcon_core.package_identification:_identify(src/docker) by extensions ['cmake', 'python']
+[1.134s] Level 1:colcon.colcon_core.package_identification:_identify(src/docker) by extension 'cmake'
+[1.135s] Level 1:colcon.colcon_core.package_identification:_identify(src/docker) by extension 'python'
+[1.135s] Level 1:colcon.colcon_core.package_identification:_identify(src/docker) by extensions ['python_setup_py']
+[1.135s] Level 1:colcon.colcon_core.package_identification:_identify(src/docker) by extension 'python_setup_py'
+[1.136s] Level 1:colcon.colcon_core.package_identification:_identify(src/gps_waypoints) by extensions ['ignore', 'ignore_ament_install']
+[1.136s] Level 1:colcon.colcon_core.package_identification:_identify(src/gps_waypoints) by extension 'ignore'
+[1.136s] Level 1:colcon.colcon_core.package_identification:_identify(src/gps_waypoints) by extension 'ignore_ament_install'
+[1.137s] Level 1:colcon.colcon_core.package_identification:_identify(src/gps_waypoints) by extensions ['colcon_pkg']
+[1.137s] Level 1:colcon.colcon_core.package_identification:_identify(src/gps_waypoints) by extension 'colcon_pkg'
+[1.137s] Level 1:colcon.colcon_core.package_identification:_identify(src/gps_waypoints) by extensions ['colcon_meta']
+[1.137s] Level 1:colcon.colcon_core.package_identification:_identify(src/gps_waypoints) by extension 'colcon_meta'
+[1.137s] Level 1:colcon.colcon_core.package_identification:_identify(src/gps_waypoints) by extensions ['ros']
+[1.138s] Level 1:colcon.colcon_core.package_identification:_identify(src/gps_waypoints) by extension 'ros'
+[1.153s] DEBUG:colcon.colcon_core.package_identification:Package 'src/gps_waypoints' with type 'ros.ament_python' and name 'gps_waypoints'
+[1.153s] Level 1:colcon.colcon_core.package_identification:_identify(src/images) by extensions ['ignore', 'ignore_ament_install']
+[1.154s] Level 1:colcon.colcon_core.package_identification:_identify(src/images) by extension 'ignore'
+[1.154s] Level 1:colcon.colcon_core.package_identification:_identify(src/images) by extension 'ignore_ament_install'
+[1.154s] Level 1:colcon.colcon_core.package_identification:_identify(src/images) by extensions ['colcon_pkg']
+[1.154s] Level 1:colcon.colcon_core.package_identification:_identify(src/images) by extension 'colcon_pkg'
+[1.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/images) by extensions ['colcon_meta']
+[1.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/images) by extension 'colcon_meta'
+[1.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/images) by extensions ['ros']
+[1.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/images) by extension 'ros'
+[1.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/images) by extensions ['cmake', 'python']
+[1.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/images) by extension 'cmake'
+[1.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/images) by extension 'python'
+[1.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/images) by extensions ['python_setup_py']
+[1.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/images) by extension 'python_setup_py'
+[1.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx_gz) by extensions ['ignore', 'ignore_ament_install']
+[1.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx_gz) by extension 'ignore'
+[1.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx_gz) by extension 'ignore_ament_install'
+[1.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx_gz) by extensions ['colcon_pkg']
+[1.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx_gz) by extension 'colcon_pkg'
+[1.157s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx_gz) by extensions ['colcon_meta']
+[1.157s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx_gz) by extension 'colcon_meta'
+[1.157s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx_gz) by extensions ['ros']
+[1.157s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx_gz) by extension 'ros'
+[1.158s] DEBUG:colcon.colcon_core.package_identification:Package 'src/vrx_gz' with type 'ros.ament_cmake' and name 'vrx_gz'
+[1.159s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx_ros) by extensions ['ignore', 'ignore_ament_install']
+[1.159s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx_ros) by extension 'ignore'
+[1.159s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx_ros) by extension 'ignore_ament_install'
+[1.159s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx_ros) by extensions ['colcon_pkg']
+[1.159s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx_ros) by extension 'colcon_pkg'
+[1.159s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx_ros) by extensions ['colcon_meta']
+[1.160s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx_ros) by extension 'colcon_meta'
+[1.160s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx_ros) by extensions ['ros']
+[1.160s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx_ros) by extension 'ros'
+[1.162s] DEBUG:colcon.colcon_core.package_identification:Package 'src/vrx_ros' with type 'ros.ament_cmake' and name 'vrx_ros'
+[1.163s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx_urdf) by extensions ['ignore', 'ignore_ament_install']
+[1.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx_urdf) by extension 'ignore'
+[1.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx_urdf) by extension 'ignore_ament_install'
+[1.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx_urdf) by extensions ['colcon_pkg']
+[1.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx_urdf) by extension 'colcon_pkg'
+[1.166s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx_urdf) by extensions ['colcon_meta']
+[1.166s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx_urdf) by extension 'colcon_meta'
+[1.166s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx_urdf) by extensions ['ros']
+[1.166s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx_urdf) by extension 'ros'
+[1.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx_urdf) by extensions ['cmake', 'python']
+[1.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx_urdf) by extension 'cmake'
+[1.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx_urdf) by extension 'python'
+[1.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx_urdf) by extensions ['python_setup_py']
+[1.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx_urdf) by extension 'python_setup_py'
+[1.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx_urdf/vrx_gazebo) by extensions ['ignore', 'ignore_ament_install']
+[1.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx_urdf/vrx_gazebo) by extension 'ignore'
+[1.169s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx_urdf/vrx_gazebo) by extension 'ignore_ament_install'
+[1.170s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx_urdf/vrx_gazebo) by extensions ['colcon_pkg']
+[1.170s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx_urdf/vrx_gazebo) by extension 'colcon_pkg'
+[1.170s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx_urdf/vrx_gazebo) by extensions ['colcon_meta']
+[1.171s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx_urdf/vrx_gazebo) by extension 'colcon_meta'
+[1.171s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx_urdf/vrx_gazebo) by extensions ['ros']
+[1.171s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx_urdf/vrx_gazebo) by extension 'ros'
+[1.175s] DEBUG:colcon.colcon_core.package_identification:Package 'src/vrx_urdf/vrx_gazebo' with type 'ros.ament_cmake' and name 'vrx_gazebo'
+[1.175s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx_urdf/wamv_description) by extensions ['ignore', 'ignore_ament_install']
+[1.175s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx_urdf/wamv_description) by extension 'ignore'
+[1.176s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx_urdf/wamv_description) by extension 'ignore_ament_install'
+[1.176s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx_urdf/wamv_description) by extensions ['colcon_pkg']
+[1.176s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx_urdf/wamv_description) by extension 'colcon_pkg'
+[1.176s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx_urdf/wamv_description) by extensions ['colcon_meta']
+[1.177s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx_urdf/wamv_description) by extension 'colcon_meta'
+[1.177s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx_urdf/wamv_description) by extensions ['ros']
+[1.177s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx_urdf/wamv_description) by extension 'ros'
+[1.181s] DEBUG:colcon.colcon_core.package_identification:Package 'src/vrx_urdf/wamv_description' with type 'ros.ament_cmake' and name 'wamv_description'
+[1.181s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx_urdf/wamv_gazebo) by extensions ['ignore', 'ignore_ament_install']
+[1.182s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx_urdf/wamv_gazebo) by extension 'ignore'
+[1.182s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx_urdf/wamv_gazebo) by extension 'ignore_ament_install'
+[1.182s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx_urdf/wamv_gazebo) by extensions ['colcon_pkg']
+[1.182s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx_urdf/wamv_gazebo) by extension 'colcon_pkg'
+[1.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx_urdf/wamv_gazebo) by extensions ['colcon_meta']
+[1.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx_urdf/wamv_gazebo) by extension 'colcon_meta'
+[1.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx_urdf/wamv_gazebo) by extensions ['ros']
+[1.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx_urdf/wamv_gazebo) by extension 'ros'
+[1.185s] DEBUG:colcon.colcon_core.package_identification:Package 'src/vrx_urdf/wamv_gazebo' with type 'ros.ament_cmake' and name 'wamv_gazebo'
+[1.185s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[1.186s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[1.186s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[1.186s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[1.186s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[1.307s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'vrx_gazebo' in 'src/vrx_urdf/vrx_gazebo'
+[1.307s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'vrx_ros' in 'src/vrx_ros'
+[1.307s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'wamv_description' in 'src/vrx_urdf/wamv_description'
+[1.307s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'wamv_gazebo' in 'src/vrx_urdf/wamv_gazebo'
+[1.307s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'vrx_gz' in 'src/vrx_gz'
+[1.309s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[1.309s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[1.321s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 5 installed packages in /home/javier/vrx_ws/install
+[1.325s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 5 installed packages in /home/javier/install
+[1.338s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 320 installed packages in /opt/ros/jazzy
+[1.343s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[1.607s] Level 5:colcon.colcon_core.verb:set package 'gps_waypoints' build argument 'cmake_args' from command line to 'None'
+[1.608s] Level 5:colcon.colcon_core.verb:set package 'gps_waypoints' build argument 'cmake_target' from command line to 'None'
+[1.609s] Level 5:colcon.colcon_core.verb:set package 'gps_waypoints' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.609s] Level 5:colcon.colcon_core.verb:set package 'gps_waypoints' build argument 'cmake_clean_cache' from command line to 'False'
+[1.610s] Level 5:colcon.colcon_core.verb:set package 'gps_waypoints' build argument 'cmake_clean_first' from command line to 'False'
+[1.610s] Level 5:colcon.colcon_core.verb:set package 'gps_waypoints' build argument 'cmake_force_configure' from command line to 'False'
+[1.610s] Level 5:colcon.colcon_core.verb:set package 'gps_waypoints' build argument 'ament_cmake_args' from command line to 'None'
+[1.610s] Level 5:colcon.colcon_core.verb:set package 'gps_waypoints' build argument 'catkin_cmake_args' from command line to 'None'
+[1.610s] Level 5:colcon.colcon_core.verb:set package 'gps_waypoints' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.611s] DEBUG:colcon.colcon_core.verb:Building package 'gps_waypoints' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/javier/vrx_ws/build/gps_waypoints', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/javier/vrx_ws/install', 'merge_install': True, 'path': '/home/javier/vrx_ws/src/gps_waypoints', 'symlink_install': False, 'test_result_base': None}
+[1.611s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[1.614s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[1.614s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/javier/vrx_ws/src/gps_waypoints' with build type 'ament_python'
+[1.615s] Level 1:colcon.colcon_core.shell:create_environment_hook('gps_waypoints', 'ament_prefix_path')
+[1.635s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[1.636s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/javier/vrx_ws/install/share/gps_waypoints/hook/ament_prefix_path.ps1'
+[1.640s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/javier/vrx_ws/install/share/gps_waypoints/hook/ament_prefix_path.dsv'
+[1.645s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/javier/vrx_ws/install/share/gps_waypoints/hook/ament_prefix_path.sh'
+[1.650s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.651s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.916s] WARNING:colcon.colcon_ros.task.ament_python.build:Package 'gps_waypoints' doesn't explicitly install a marker in the package index (colcon-ros currently does it implicitly but that fallback will be removed in the future)
+[2.917s] WARNING:colcon.colcon_ros.task.ament_python.build:Package 'gps_waypoints' doesn't explicitly install the 'package.xml' file (colcon-ros currently does it implicitly but that fallback will be removed in the future)
+[2.918s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/javier/vrx_ws/src/gps_waypoints'
+[2.918s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.918s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[6.584s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/javier/vrx_ws/src/gps_waypoints': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/javier/vrx_ws/build/gps_waypoints/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/javier/vrx_ws/install/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/gps_waypoints build --build-base /home/javier/vrx_ws/build/gps_waypoints/build install --record /home/javier/vrx_ws/build/gps_waypoints/install.log --single-version-externally-managed
+[9.380s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/javier/vrx_ws/src/gps_waypoints' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/javier/vrx_ws/build/gps_waypoints/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/javier/vrx_ws/install/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/gps_waypoints build --build-base /home/javier/vrx_ws/build/gps_waypoints/build install --record /home/javier/vrx_ws/build/gps_waypoints/install.log --single-version-externally-managed
+[9.397s] Level 1:colcon.colcon_core.environment:checking '/home/javier/vrx_ws/install' for CMake module files
+[9.398s] Level 1:colcon.colcon_core.environment:checking '/home/javier/vrx_ws/install' for CMake config files
+[9.399s] Level 1:colcon.colcon_core.shell:create_environment_hook('gps_waypoints', 'cmake_prefix_path')
+[9.400s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/javier/vrx_ws/install/share/gps_waypoints/hook/cmake_prefix_path.ps1'
+[9.402s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/javier/vrx_ws/install/share/gps_waypoints/hook/cmake_prefix_path.dsv'
+[9.405s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/javier/vrx_ws/install/share/gps_waypoints/hook/cmake_prefix_path.sh'
+[9.411s] Level 1:colcon.colcon_core.environment:checking '/home/javier/vrx_ws/install/lib'
+[9.413s] Level 1:colcon.colcon_core.environment:checking '/home/javier/vrx_ws/install/bin'
+[9.413s] Level 1:colcon.colcon_core.shell:create_environment_hook('gps_waypoints', 'path')
+[9.415s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/javier/vrx_ws/install/share/gps_waypoints/hook/path.ps1'
+[9.417s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/javier/vrx_ws/install/share/gps_waypoints/hook/path.dsv'
+[9.418s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/javier/vrx_ws/install/share/gps_waypoints/hook/path.sh'
+[9.421s] Level 1:colcon.colcon_core.environment:checking '/home/javier/vrx_ws/install/lib/pkgconfig/gps_waypoints.pc'
+[9.422s] Level 1:colcon.colcon_core.environment:checking '/home/javier/vrx_ws/install/lib/python3.12/site-packages'
+[9.422s] Level 1:colcon.colcon_core.shell:create_environment_hook('gps_waypoints', 'pythonpath')
+[9.422s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/javier/vrx_ws/install/share/gps_waypoints/hook/pythonpath.ps1'
+[9.425s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/javier/vrx_ws/install/share/gps_waypoints/hook/pythonpath.dsv'
+[9.429s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/javier/vrx_ws/install/share/gps_waypoints/hook/pythonpath.sh'
+[9.436s] Level 1:colcon.colcon_core.environment:checking '/home/javier/vrx_ws/install/bin'
+[9.437s] Level 1:colcon.colcon_core.shell:create_environment_hook('gps_waypoints', 'pythonscriptspath')
+[9.439s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/javier/vrx_ws/install/share/gps_waypoints/hook/pythonscriptspath.ps1'
+[9.441s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/javier/vrx_ws/install/share/gps_waypoints/hook/pythonscriptspath.dsv'
+[9.442s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/javier/vrx_ws/install/share/gps_waypoints/hook/pythonscriptspath.sh'
+[9.444s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(gps_waypoints)
+[9.445s] INFO:colcon.colcon_core.shell:Creating package script '/home/javier/vrx_ws/install/share/gps_waypoints/package.ps1'
+[9.449s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/javier/vrx_ws/install/share/gps_waypoints/package.dsv'
+[9.453s] INFO:colcon.colcon_core.shell:Creating package script '/home/javier/vrx_ws/install/share/gps_waypoints/package.sh'
+[9.457s] INFO:colcon.colcon_core.shell:Creating package script '/home/javier/vrx_ws/install/share/gps_waypoints/package.bash'
+[9.460s] INFO:colcon.colcon_core.shell:Creating package script '/home/javier/vrx_ws/install/share/gps_waypoints/package.zsh'
+[9.462s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/javier/vrx_ws/install/share/colcon-core/packages/gps_waypoints)
+[9.463s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[9.465s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[9.465s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[9.465s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[9.494s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[9.494s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[9.495s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[9.574s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[9.574s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/javier/vrx_ws/install/local_setup.ps1'
+[9.583s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/javier/vrx_ws/install/_local_setup_util_ps1.py'
+[9.595s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/javier/vrx_ws/install/setup.ps1'
+[9.599s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/javier/vrx_ws/install/local_setup.sh'
+[9.601s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/javier/vrx_ws/install/_local_setup_util_sh.py'
+[9.603s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/javier/vrx_ws/install/setup.sh'
+[9.615s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/javier/vrx_ws/install/local_setup.bash'
+[9.619s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/javier/vrx_ws/install/setup.bash'
+[9.624s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/javier/vrx_ws/install/local_setup.zsh'
+[9.626s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/javier/vrx_ws/install/setup.zsh'

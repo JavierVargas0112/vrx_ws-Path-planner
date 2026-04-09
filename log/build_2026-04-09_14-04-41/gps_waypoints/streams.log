@@ -1,0 +1,25 @@
+[4.966s] Invoking command in '/home/javier/vrx_ws/src/gps_waypoints': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/javier/vrx_ws/build/gps_waypoints/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/javier/vrx_ws/install/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/gps_waypoints build --build-base /home/javier/vrx_ws/build/gps_waypoints/build install --record /home/javier/vrx_ws/build/gps_waypoints/install.log --single-version-externally-managed
+[6.295s] running egg_info
+[6.419s] writing ../../build/gps_waypoints/gps_waypoints.egg-info/PKG-INFO
+[6.421s] writing dependency_links to ../../build/gps_waypoints/gps_waypoints.egg-info/dependency_links.txt
+[6.423s] writing entry points to ../../build/gps_waypoints/gps_waypoints.egg-info/entry_points.txt
+[6.424s] writing requirements to ../../build/gps_waypoints/gps_waypoints.egg-info/requires.txt
+[6.424s] writing top-level names to ../../build/gps_waypoints/gps_waypoints.egg-info/top_level.txt
+[6.672s] reading manifest file '../../build/gps_waypoints/gps_waypoints.egg-info/SOURCES.txt'
+[6.676s] writing manifest file '../../build/gps_waypoints/gps_waypoints.egg-info/SOURCES.txt'
+[6.677s] running build
+[6.679s] running build_py
+[6.680s] copying gps_waypoints/controller_node.py -> /home/javier/vrx_ws/build/gps_waypoints/build/lib/gps_waypoints
+[6.680s] running install
+[6.706s] running install_lib
+[6.835s] copying /home/javier/vrx_ws/build/gps_waypoints/build/lib/gps_waypoints/controller_node.py -> /home/javier/vrx_ws/install/lib/python3.12/site-packages/gps_waypoints
+[6.838s] byte-compiling /home/javier/vrx_ws/install/lib/python3.12/site-packages/gps_waypoints/controller_node.py to controller_node.cpython-312.pyc
+[6.851s] running install_egg_info
+[6.979s] removing '/home/javier/vrx_ws/install/lib/python3.12/site-packages/gps_waypoints-0.0.0-py3.12.egg-info' (and everything under it)
+[6.987s] Copying ../../build/gps_waypoints/gps_waypoints.egg-info to /home/javier/vrx_ws/install/lib/python3.12/site-packages/gps_waypoints-0.0.0-py3.12.egg-info
+[6.992s] running install_scripts
+[7.628s] Installing gps_waypoint_controller script to /home/javier/vrx_ws/install/lib/gps_waypoints
+[7.628s] Installing gps_waypoint_converter script to /home/javier/vrx_ws/install/lib/gps_waypoints
+[7.628s] Installing gps_waypoint_node script to /home/javier/vrx_ws/install/lib/gps_waypoints
+[7.630s] writing list of installed files to '/home/javier/vrx_ws/build/gps_waypoints/install.log'
+[7.761s] Invoked command in '/home/javier/vrx_ws/src/gps_waypoints' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/javier/vrx_ws/build/gps_waypoints/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/javier/vrx_ws/install/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/gps_waypoints build --build-base /home/javier/vrx_ws/build/gps_waypoints/build install --record /home/javier/vrx_ws/build/gps_waypoints/install.log --single-version-externally-managed
